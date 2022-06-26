@@ -1,0 +1,1 @@
+C:\Users\aim\Desktop\Study_CSharp\AspNetWindow\AspNetWindow\bin\Debug\AdoNetWindow.exe.config
