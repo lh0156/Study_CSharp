@@ -29,6 +29,8 @@ namespace NameManager
 
         private void btnWordManager_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            WordManager.WordMainForm WF = new WordManager.WordMainForm();
             
         }
     }//Class

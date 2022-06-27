@@ -18,3 +18,4 @@ C:\Users\aim\Desktop\Study_CSharp\NameManager\NameManager\obj\Debug\NameManager.
 C:\Users\aim\Desktop\Study_CSharp\NameManager\NameManager\obj\Debug\NameManager.pdb
 C:\Users\aim\Desktop\Study_CSharp\NameManager\NameManager\bin\Debug\Infragistics4.Win.UltraWinEditors.v14.2.dll
 C:\Users\aim\Desktop\Study_CSharp\NameManager\NameManager\bin\Debug\Infragistics4.Win.UltraWinEditors.v14.2.xml
+C:\Users\aim\Desktop\Study_CSharp\NameManager\NameManager\obj\Debug\NameManager.WordManager.WordMainForm.resources
