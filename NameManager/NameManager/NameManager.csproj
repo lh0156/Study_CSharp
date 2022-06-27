@@ -35,7 +35,7 @@
     <Reference Include="Infragistics4.Shared.v14.2, Version=14.2.20142.2168, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Infragistics4.Win.Misc.v14.2, Version=14.2.20142.2168, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinEditors.v14.2, Version=14.2.20142.2168, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
-    <Reference Include="Infragistics4.Win.v14.2, Version=14.2.20142.2168, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v14.2, Version=14.2.20142.2168, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,12 +46,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeManager\CodeMainForm.cs">

@@ -25,16 +25,24 @@ namespace NameManager.WordManager
             InitializeComponent();
         }
 
+        private void WordMainForm_Load(object sender, EventArgs e)
+        {
+            var open = "SELECT * FROM tblenumdepartment";
+            this.ds = GetRestDataSet(open);
+            dgvWordList.DataSource = ds.Tables[0].DefaultView;
+        }
+
         public DataSet GetRestDataSet(string query)
         {
             try
             {
                 conn = new OleDbConnection(connstr);
+                conn.Open();
                 cmd = new OleDbCommand(query, conn);
                 OleDbDataAdapter adapter = new OleDbDataAdapter();
                 adapter.SelectCommand = cmd;
                 DataSet ds = new DataSet();
-                adapter.Fill(ds, "RSList");
+                adapter.Fill(ds, "tblword");
                 conn.Close();
                 return ds;
             }
@@ -42,7 +50,11 @@ namespace NameManager.WordManager
             {
                 MessageBox.Show("데이터 셋 오류");
                 return null;
+            } finally
+            {
+                conn.Close();
             }
         }
+
     }
 }

@@ -28,53 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.txtTextBox = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tBLWORDBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dgvWordList = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tBLWORDBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWordList)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 53);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 40);
-            this.textBox1.TabIndex = 0;
+            this.txtTextBox.Location = new System.Drawing.Point(52, 64);
+            this.txtTextBox.Multiline = true;
+            this.txtTextBox.Name = "txtTextBox";
+            this.txtTextBox.Size = new System.Drawing.Size(254, 31);
+            this.txtTextBox.TabIndex = 0;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(313, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "search";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.Orange;
+            this.btnSearch.Font = new System.Drawing.Font("Lucida Calligraphy", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSearch.Location = new System.Drawing.Point(321, 64);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 31);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "search";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // tBLWORDBindingSource
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(696, 271);
-            this.dataGridView1.TabIndex = 2;
+            this.tBLWORDBindingSource.DataMember = "TBLWORD";
+            // 
+            // tBLWORDTableAdapter
+            // 
+            // dgvWordList
+            // 
+            this.dgvWordList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvWordList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWordList.GridColor = System.Drawing.SystemColors.AppWorkspace;
+            this.dgvWordList.Location = new System.Drawing.Point(52, 118);
+            this.dgvWordList.Name = "dgvWordList";
+            this.dgvWordList.RowTemplate.Height = 23;
+            this.dgvWordList.Size = new System.Drawing.Size(696, 271);
+            this.dgvWordList.TabIndex = 6;
             // 
             // WordMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 440);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(822, 440);
+            this.Controls.Add(this.dgvWordList);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtTextBox);
             this.Name = "WordMainForm";
             this.Text = "WordMainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.WordMainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tBLWORDBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvWordList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +94,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtTextBox;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.BindingSource tBLWORDBindingSource;
+        private System.Windows.Forms.DataGridView dgvWordList;
     }
 }

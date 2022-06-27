@@ -50,19 +50,19 @@
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(318, 61);
+            this.button1.Location = new System.Drawing.Point(322, 64);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
+            this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 4;
             this.button1.Text = "search";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 61);
+            this.textBox1.Location = new System.Drawing.Point(52, 64);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 40);
+            this.textBox1.Size = new System.Drawing.Size(254, 31);
             this.textBox1.TabIndex = 3;
             // 
             // MethodMainForm

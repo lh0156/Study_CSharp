@@ -50,29 +50,29 @@
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(318, 61);
+            this.button1.Location = new System.Drawing.Point(322, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 7;
+            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.TabIndex = 10;
             this.button1.Text = "search";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 61);
+            this.textBox1.Location = new System.Drawing.Point(52, 69);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 40);
-            this.textBox1.TabIndex = 6;
+            this.textBox1.Size = new System.Drawing.Size(254, 31);
+            this.textBox1.TabIndex = 9;
             // 
             // CodeMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "CodeMainForm";
             this.Text = "CodeMainForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
