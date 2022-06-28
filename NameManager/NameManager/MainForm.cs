@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,14 @@ namespace NameManager
             생성자 정의
             이니셜라이즈드 이외에 별도의 정의 없음
          */
+
+        public OleDbConnection conn = null;
+        public OleDbCommand cmd = null;
+        public OleDbDataReader reader = null;
+        public OleDbDataAdapter adp = null;
+        public DataSet ds = null;
+        
+
         public MainForm()
         {
             InitializeComponent();
@@ -42,6 +51,21 @@ namespace NameManager
             WF.StartPosition = FormStartPosition.Manual;
             WF.Location = new Point(100, 100);
             WF.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.conn = new OleDbConnection(DBUtil.DBUtil.connStr);
+            this.cmd = new OleDbCommand("select * from tblword", conn);
+
+            conn.Open();
+
+            reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                MessageBox.Show((reader.GetValue(0) + ""));
+            }
         }
     }//Class
 }//NameSpace

@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             this.ultraFormManager1 = new Infragistics.Win.UltraWinForm.UltraFormManager(this.components);
             this.MainForm_Fill_Panel = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraPictureBox5 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.ultraPictureBox4 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.ultraPictureBox3 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.ultraPictureBox2 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
             this.btnColumnManage = new Infragistics.Win.Misc.UltraButton();
             this.ultraButton4 = new Infragistics.Win.Misc.UltraButton();
             this.btnMethodManager = new Infragistics.Win.Misc.UltraButton();
@@ -42,11 +47,8 @@
             this._MainForm_UltraFormManager_Dock_Area_Right = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
             this._MainForm_UltraFormManager_Dock_Area_Top = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
             this._MainForm_UltraFormManager_Dock_Area_Bottom = new Infragistics.Win.UltraWinForm.UltraFormDockArea();
-            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
-            this.ultraPictureBox2 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
-            this.ultraPictureBox3 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
-            this.ultraPictureBox4 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
-            this.ultraPictureBox5 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ultraFormManager1)).BeginInit();
             this.MainForm_Fill_Panel.ClientArea.SuspendLayout();
             this.MainForm_Fill_Panel.SuspendLayout();
@@ -61,6 +63,7 @@
             // 
             // MainForm_Fill_Panel.ClientArea
             // 
+            this.MainForm_Fill_Panel.ClientArea.Controls.Add(this.button2);
             this.MainForm_Fill_Panel.ClientArea.Controls.Add(this.ultraPictureBox5);
             this.MainForm_Fill_Panel.ClientArea.Controls.Add(this.ultraPictureBox4);
             this.MainForm_Fill_Panel.ClientArea.Controls.Add(this.ultraPictureBox3);
@@ -78,6 +81,51 @@
             this.MainForm_Fill_Panel.Name = "MainForm_Fill_Panel";
             this.MainForm_Fill_Panel.Size = new System.Drawing.Size(1044, 464);
             this.MainForm_Fill_Panel.TabIndex = 0;
+            // 
+            // ultraPictureBox5
+            // 
+            this.ultraPictureBox5.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox5.Image = ((object)(resources.GetObject("ultraPictureBox5.Image")));
+            this.ultraPictureBox5.Location = new System.Drawing.Point(839, 35);
+            this.ultraPictureBox5.Name = "ultraPictureBox5";
+            this.ultraPictureBox5.Size = new System.Drawing.Size(161, 294);
+            this.ultraPictureBox5.TabIndex = 14;
+            // 
+            // ultraPictureBox4
+            // 
+            this.ultraPictureBox4.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox4.Image = ((object)(resources.GetObject("ultraPictureBox4.Image")));
+            this.ultraPictureBox4.Location = new System.Drawing.Point(644, 35);
+            this.ultraPictureBox4.Name = "ultraPictureBox4";
+            this.ultraPictureBox4.Size = new System.Drawing.Size(161, 294);
+            this.ultraPictureBox4.TabIndex = 13;
+            // 
+            // ultraPictureBox3
+            // 
+            this.ultraPictureBox3.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox3.Image = ((object)(resources.GetObject("ultraPictureBox3.Image")));
+            this.ultraPictureBox3.Location = new System.Drawing.Point(444, 35);
+            this.ultraPictureBox3.Name = "ultraPictureBox3";
+            this.ultraPictureBox3.Size = new System.Drawing.Size(161, 294);
+            this.ultraPictureBox3.TabIndex = 12;
+            // 
+            // ultraPictureBox2
+            // 
+            this.ultraPictureBox2.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox2.Image = ((object)(resources.GetObject("ultraPictureBox2.Image")));
+            this.ultraPictureBox2.Location = new System.Drawing.Point(248, 35);
+            this.ultraPictureBox2.Name = "ultraPictureBox2";
+            this.ultraPictureBox2.Size = new System.Drawing.Size(161, 294);
+            this.ultraPictureBox2.TabIndex = 11;
+            // 
+            // ultraPictureBox1
+            // 
+            this.ultraPictureBox1.BorderShadowColor = System.Drawing.Color.Empty;
+            this.ultraPictureBox1.Image = ((object)(resources.GetObject("ultraPictureBox1.Image")));
+            this.ultraPictureBox1.Location = new System.Drawing.Point(48, 35);
+            this.ultraPictureBox1.Name = "ultraPictureBox1";
+            this.ultraPictureBox1.Size = new System.Drawing.Size(161, 294);
+            this.ultraPictureBox1.TabIndex = 10;
             // 
             // btnColumnManage
             // 
@@ -184,56 +232,31 @@
             this._MainForm_UltraFormManager_Dock_Area_Bottom.Name = "_MainForm_UltraFormManager_Dock_Area_Bottom";
             this._MainForm_UltraFormManager_Dock_Area_Bottom.Size = new System.Drawing.Size(1060, 8);
             // 
-            // ultraPictureBox1
+            // button1
             // 
-            this.ultraPictureBox1.BorderShadowColor = System.Drawing.Color.Empty;
-            this.ultraPictureBox1.Image = ((object)(resources.GetObject("ultraPictureBox1.Image")));
-            this.ultraPictureBox1.Location = new System.Drawing.Point(48, 35);
-            this.ultraPictureBox1.Name = "ultraPictureBox1";
-            this.ultraPictureBox1.Size = new System.Drawing.Size(161, 294);
-            this.ultraPictureBox1.TabIndex = 10;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // ultraPictureBox2
+            // button2
             // 
-            this.ultraPictureBox2.BorderShadowColor = System.Drawing.Color.Empty;
-            this.ultraPictureBox2.Image = ((object)(resources.GetObject("ultraPictureBox2.Image")));
-            this.ultraPictureBox2.Location = new System.Drawing.Point(248, 35);
-            this.ultraPictureBox2.Name = "ultraPictureBox2";
-            this.ultraPictureBox2.Size = new System.Drawing.Size(161, 294);
-            this.ultraPictureBox2.TabIndex = 11;
-            // 
-            // ultraPictureBox3
-            // 
-            this.ultraPictureBox3.BorderShadowColor = System.Drawing.Color.Empty;
-            this.ultraPictureBox3.Image = ((object)(resources.GetObject("ultraPictureBox3.Image")));
-            this.ultraPictureBox3.Location = new System.Drawing.Point(444, 35);
-            this.ultraPictureBox3.Name = "ultraPictureBox3";
-            this.ultraPictureBox3.Size = new System.Drawing.Size(161, 294);
-            this.ultraPictureBox3.TabIndex = 12;
-            // 
-            // ultraPictureBox4
-            // 
-            this.ultraPictureBox4.BorderShadowColor = System.Drawing.Color.Empty;
-            this.ultraPictureBox4.Image = ((object)(resources.GetObject("ultraPictureBox4.Image")));
-            this.ultraPictureBox4.Location = new System.Drawing.Point(644, 35);
-            this.ultraPictureBox4.Name = "ultraPictureBox4";
-            this.ultraPictureBox4.Size = new System.Drawing.Size(161, 294);
-            this.ultraPictureBox4.TabIndex = 13;
-            // 
-            // ultraPictureBox5
-            // 
-            this.ultraPictureBox5.BorderShadowColor = System.Drawing.Color.Empty;
-            this.ultraPictureBox5.Image = ((object)(resources.GetObject("ultraPictureBox5.Image")));
-            this.ultraPictureBox5.Location = new System.Drawing.Point(839, 35);
-            this.ultraPictureBox5.Name = "ultraPictureBox5";
-            this.ultraPictureBox5.Size = new System.Drawing.Size(161, 294);
-            this.ultraPictureBox5.TabIndex = 14;
+            this.button2.Location = new System.Drawing.Point(313, 25);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 52);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 504);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.MainForm_Fill_Panel);
             this.Controls.Add(this._MainForm_UltraFormManager_Dock_Area_Left);
             this.Controls.Add(this._MainForm_UltraFormManager_Dock_Area_Right);
@@ -268,6 +291,8 @@
         private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox3;
         private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox2;
         private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
